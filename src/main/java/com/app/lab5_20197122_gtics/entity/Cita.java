@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 
 @Data
 @Entity
-@Table(name = "Citas")
+@Table(name = "citas")
 public class Cita {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

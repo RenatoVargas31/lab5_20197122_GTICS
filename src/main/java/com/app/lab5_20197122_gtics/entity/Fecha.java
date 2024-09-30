@@ -7,7 +7,7 @@ import java.time.LocalDate;
 
 @Data
 @Entity
-@Table(name = "Fechas")
+@Table(name = "fechas")
 public class Fecha {
     @EmbeddedId
     private FechaId id;
