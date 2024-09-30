@@ -47,5 +47,9 @@ public class AppController {
         model.addAttribute("profesionales", profesionales);
         return "catalogo";
     }
-
+    //Vista de Reservar Cita
+    @GetMapping("/reservaCitaForm")
+    public String reservarCita(Model model) {
+        return "reservaCita";
+    }
 }

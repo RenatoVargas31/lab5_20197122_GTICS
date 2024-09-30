@@ -48,7 +48,7 @@
         por ello, condicioné los botones para quitar y añadir al carrito con un tributo que me indica si está o no en el carrito-->
     <div class="album py-5 bg-body-tertiary">
         <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
                 <div class="col" th:each="profesional : ${profesionales}">
                     <div class="card shadow-sm" style="height: 435px">
                         <img th:src="${profesional.imagen}" alt="imagen de una flor" height="225" class="w-100">
@@ -61,7 +61,7 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <!--Botones de las cards-->
-                                    <a type="button" class="btn btn-sm btn-outline-secondary">Registrar Cita</a>
+                                    <a th:href="@{/app/reservaCitaForm}" type="button" class="btn btn-sm btn-outline-secondary">Registrar Cita</a>
                                 </div>
                             </div>
                         </div>

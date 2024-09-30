@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>
+  <title>Nuevo Transportista</title>
+</head>
+<body>
+<main>
+  <div class="m-5">
+    <h2 class="fw-bold text-center">RESERVA DE CITA</h2>
+    <form class="row g-3 needs-validation m-3" method="post" action="registroAlumnos">
+      <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">Nombre</label>
+        <input type="text" name="nombre" class="form-control" id="validationCustom01" equired>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom02" class="form-label">Apellido</label>
+        <input type="text" name="apellido" class="form-control" id="validationCustom02" required>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustomUsername" class="form-label">DNI</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">🪪</span>
+          <input type="text" name="DNI" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom05" class="form-label">Código PUCP</label>
+        <input type="text" name="codigoPUCP" class="form-control" id="validationCustom05" required>
+      </div>
+      <div class="col-md-6">
+        <label for="validationCustom03" class="form-label">Domicilio</label>
+        <input type="text" name="domicilio" class="form-control" id="validationCustom03" required>
+      </div>
+
+      <div class="col-12">
+        <a th:href="@{/app/catalogo}" class="btn btn-outline-danger">Cancelar</a>
+        <button type="submit" class="btn btn-outline-primary">Reservar Cita</button>
+      </div>
+    </form>
+  </div>
+</main>
+<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>
